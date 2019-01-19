@@ -1,0 +1,183 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(../img/img_09.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content {
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  color: #454545 !important;
+  font-family: Roboto !important;
+  margin: 32px 0 32px 40px !important;
+}
+
+.row {
+  z-index: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.cardd {
+  border: 1px solid rgba(255,255,255,0.1);
+  height: 220px;
+  -webkit-transition: 1s !important;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.row h5 {
+  color: #fff;
+  font-family: Roboto;
+  margin: 48px 0 2px 4px;
+  font-size: 16px;
+}
+
+.row h5:before {
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: -2px;
+  width: 2px;
+  height: 22px;
+  display: block;
+  background: #fff;
+}
+
+p {
+  color: #28a745;
+  margin-left: 4px;
+  font-size: 14px;
+  margin-bottom: 70px !important;
+}
+
+a {
+  margin-left: 4px;
+  color: #fff !important;
+  font-family: Roboto;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: #868686 !important;
+}
+
+.cardd:hover:before {
+  -webkit-transition: 1s !important;
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 6.25em;
+  width: 10em;
+  height: 10em;
+  z-index: -1;
+  animation: anim 3.2s ease-in-out;
+}
+
+.card1.cardd:hover::before {
+  background: url(../img/profile/img_11.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.card2.cardd:hover::before {
+  background: url(../img/profile/img_12.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.card3.cardd:hover::before {
+  background: url(../img/profile/img_02.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card4.cardd:hover::before {
+  background: url(../img/profile/img_13.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.card5.cardd:hover::before {
+  background: url(../img/profile/img_16.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.card6.cardd:hover::before {
+  background: url(../img/profile/img_08.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card7.cardd:hover::before {
+  background: url(../img/profile/img_01.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.card8.cardd:hover::before {
+  background: url(../img/profile/img_10.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    left: 70px;
+  }
+
+  20% {
+    opacity: 1;
+    left: 100px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  a {
+    display: none !important;
+  }
+
+  .cardd {
+    height: 100px;
+  }
+
+  .row h5 {
+    margin: 28px 0 2px 4px;
+  }
+
+  .row p {
+    margin-bottom: 10px !important;
+  }
+
+  .row h5::before {
+    top: 26px;
+  }
+
+  .cardd:hover::before {
+    display: none;
+  }
+}
